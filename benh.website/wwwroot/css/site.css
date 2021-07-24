@@ -1,0 +1,151 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+
+/************************/
+/**  Color stuff.      **/
+/************************/
+:root {
+    --yellow: #A89546;
+    --pink: #A846A8;
+    --green: #46A865;
+    --blue: #4698A8;
+}
+.yellow {
+    color: var(--yellow);
+}
+.pink {
+    color: var(--pink);
+}
+.green {
+    color: var(--green);
+}
+.blue {
+    color: var(--blue);
+}
+
+
+/************************/
+/**  Header stuff.     **/
+/************************/
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*  The page logo.      */
+#page-logo {
+  color: black;
+  text-decoration: none;
+  margin-top: 10px;
+}
+#page-logo h1 {
+  font-weight: normal;
+  text-align: center;
+  font-size: 30px;
+}
+#page-subtitle {
+  color: gray;
+  font-style: italic;
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+
+/*  The nav bar.        */
+nav {
+  display: flex;
+  justify-content: center;
+}
+.nav-link {
+  width: 100px;
+  text-align: center;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: gray;
+  font-size: 14px;
+}
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+
+
+.divider-line {
+  margin-top: 20px;
+  width: 400px;
+  border-bottom: solid 1px black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+/************************/
+/**  Body content.     **/
+/************************/
+
+.text-center {
+    max-width: 600px;
+    margin: auto;
+}
+
+.container-center {
+    max-width: 600px;
+    margin: auto;
+}
+.flex {
+    display: flex;
+}
+.space-between {
+    justify-content: space-between;
+}
+
+h2, h3, p {
+    margin: 0px;
+}
+
+.icon {
+    width: 18px;
+    margin-right: 10px;
+}
+
+.centered {
+    text-align: center;
+}
+
+/*  Portfolio styling.   */
+.portfolio-item {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.7);
+    margin-top: 50px;
+    transition-duration: .5s;
+    overflow: hidden;
+    margin-bottom: -5px;
+}
+.portfolio-item:hover {
+    transform: scale(1.1);
+}
+.portfolio-item-text {
+    width: calc(100% - 20px);
+    background: rgba(255,255,255,0.85);
+    position: absolute;
+    bottom: 0px;
+    padding: 10px;
+    font-size: 14px;
+}
+.portfolio-item-text p {
+    margin-bottom: 5px;
+}
+.portfolio-pic {
+    object-fit: cover;
+    width: 100%;
+}
+
+
+/************************/
+/**  Footer stuff.     **/
+/************************/

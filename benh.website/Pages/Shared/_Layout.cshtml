@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - benh.website</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <!--  Header  -->
+    <header>
+        <a id="page-logo" asp-area="" asp-page="/Index">
+            <h1>&#9639; &nbsp; Ben H &nbsp; &#9640;</h1>
+            <p id="page-subtitle">Hi! This is my personal website.</p>
+        </a>
+
+        <nav id="navbar">
+            <a class="nav-link" asp-area="" asp-page="/Bio">Bio</a>
+            <a class="nav-link" asp-area="" asp-page="/Portfolio">Portfolio</a>
+            <a class="nav-link" asp-area="" asp-page="/Plans">Plans</a>
+            <a class="nav-link" asp-area="" asp-page="/Wiki">Wiki</a>
+        </nav>
+
+        <div class="divider-line"></div>
+    </header>
+
+    <!--  Page content  -->
+    <div class="container">
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!--  Footer  -->
+    <footer id="footer">
+        
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
