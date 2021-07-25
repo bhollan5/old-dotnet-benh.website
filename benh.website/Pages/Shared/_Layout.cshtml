@@ -15,10 +15,23 @@
         </a>
 
         <nav id="navbar">
-            <a class="nav-link" asp-area="" asp-page="/Bio">Bio</a>
-            <a class="nav-link" asp-area="" asp-page="/Portfolio">Portfolio</a>
-            <a class="nav-link" asp-area="" asp-page="/Plans">Plans</a>
-            <a class="nav-link" asp-area="" asp-page="/Wiki">Wiki</a>
+            @functions{
+                public string GetClassFromRoute(string matching_route, string class_name)
+                {
+                    if (Url.RouteUrl(ViewContext.RouteData.Values) == "/" + matching_route)
+                    {
+                        return "nav-link selected " + class_name;
+                    }
+                    else
+                    {
+                        return "nav-link gray";
+                    }
+                }
+            }
+            <a class="@GetClassFromRoute("Bio", "yellow")" asp-area="" asp-page="/Bio">Bio</a>
+            <a class="@GetClassFromRoute("Portfolio", "pink")" asp-area="" asp-page="/Portfolio">Portfolio</a>
+            <a class="@GetClassFromRoute("Plans", "green")" asp-area="" asp-page="/Plans">Plans</a>
+            <a class="@GetClassFromRoute("Wiki", "blue")" asp-area="" asp-page="/Wiki">Wiki</a>
         </nav>
 
         <div class="divider-line"></div>

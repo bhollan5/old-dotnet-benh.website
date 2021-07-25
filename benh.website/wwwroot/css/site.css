@@ -10,6 +10,7 @@ for details on configuring this project to bundle and minify static web assets. 
     --pink: #A846A8;
     --green: #46A865;
     --blue: #4698A8;
+    --gray: #999999;
 }
 .yellow {
     color: var(--yellow);
@@ -22,6 +23,9 @@ for details on configuring this project to bundle and minify static web assets. 
 }
 .blue {
     color: var(--blue);
+}
+.gray {
+    color: var(--gray);
 }
 
 
@@ -63,11 +67,14 @@ nav {
   text-align: center;
   font-family: sans-serif;
   text-decoration: none;
-  color: gray;
   font-size: 14px;
 }
 .nav-link:hover {
   text-decoration: underline;
+}
+.nav-link.selected {
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 
