@@ -53,7 +53,7 @@ header {
 #page-subtitle {
   color: gray;
   font-style: italic;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   font-size: 18px;
 }
 
@@ -64,6 +64,7 @@ nav {
 }
 .nav-link {
   width: 100px;
+  padding-top: 20px;
   text-align: center;
   font-family: sans-serif;
   text-decoration: none;
@@ -85,6 +86,17 @@ nav {
   border-bottom: solid 1px black;
   margin-left: auto;
   margin-right: auto;
+}
+
+.ellipsis {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100px;
+    height: 50px;
+    background-image: url(/assets/general/ellipsis.svg);
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -128,7 +140,7 @@ h2, h3, p {
     height: 300px;
     position: relative;
     box-shadow: 0px 0px 10px rgba(0,0,0,.7);
-    margin-top: 50px;
+    margin-top: 100px;
     transition-duration: .5s;
     overflow: hidden;
     margin-bottom: -5px;
@@ -150,6 +162,27 @@ h2, h3, p {
 .portfolio-pic {
     object-fit: cover;
     width: 100%;
+}
+
+/*  Wiki styling.       */
+.wiki-page p {
+    font-family: sans-serif;
+}
+.table-of-contents {
+    background: #F8F9FA;
+    border: solid 1px #A4A9B0;
+    padding: 5px 2px;
+    font-family: sans-serif;
+    line-height: 150%;
+    width: 50%;
+}
+.table-of-contents ul {
+    list-style-type: none;
+    padding-left: 10px;
+}
+.table-of-contents a {
+    text-decoration: none;
+    color: #2342AB;
 }
 
 
