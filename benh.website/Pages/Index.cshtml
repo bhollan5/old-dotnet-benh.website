@@ -4,15 +4,36 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
+<div class="text-center centered">
 
-    <br/><br /><br /><br />
+    <br /><br /><br /><br />
     <h3>Hi there!</h3>
-    <p>
-        My name is Ben Holland, or Ben H. This is my personal website.
-    </p>
+    <p> My name is Ben Holland, or Ben H. This is my personal website. </p>
     <br />
-    <p>
-        It contains my <a class="yellow" asp-page="/Bio">bio</a>, <a class="pink" asp-page="/Portfolio">portfolio</a>, <a class="green" asp-page="/Plans">current plans</a>, and my <a class="blue" asp-page="/Wiki">personal research wiki</a>.
-    </p>
+    <p> Pages on this website: </p>
+
+    <a asp-page="/Bio">
+        <div class="landing-page-link">
+            Bio and resumé.
+            <div class="landing-page-link-color" style="background:var(--yellow);"></div>
+        </div>
+    </a>
+    <a asp-page="/Portfolio">
+        <div class="landing-page-link">
+            Portfolio of design work.
+            <div class="landing-page-link-color" style="background:var(--pink);"></div>
+        </div>
+    </a>
+    <a asp-page="/Plans">
+        <div class="landing-page-link">
+            Upcoming plans.
+            <div class="landing-page-link-color" style="background:var(--green);"></div>
+        </div>
+    </a>
+    <a asp-page="/Wiki">
+        <div class="landing-page-link">
+            Research wiki.
+            <div class="landing-page-link-color" style="background:var(--blue);"></div>
+        </div>
+    </a>
 </div>
