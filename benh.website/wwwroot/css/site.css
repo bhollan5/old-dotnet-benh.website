@@ -125,6 +125,10 @@ h2, h3, p {
     margin: 0px;
 }
 
+h4 {
+    font-family: sans-serif;
+}
+
 .icon {
     width: 18px;
     margin-right: 10px;
