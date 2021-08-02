@@ -147,6 +147,7 @@ h4 {
     width: 100%;
     position: relative;
     transition-duration: .5s;
+    font-family: sans-serif;
 }
 .landing-page-link:hover {
     transform: scale(1.1);
