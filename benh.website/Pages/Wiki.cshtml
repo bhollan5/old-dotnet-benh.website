@@ -1,5 +1,5 @@
 ﻿@page "{title=My_Personal_Wiki}"
-@model WikiModel
+@model WikiEditorModel
 @{
 }
 
@@ -83,8 +83,16 @@
         <li>The <b>wiki page editor</b> can be used to display an editable version of any wiki page in the database.  This page is only accessible after logging in from the admin page.</li>
     </ul>
     <br />
-    <p>Using these pages, I'm able to create, retrieve, and edit wiki pages from the SQL database. </p>
-    <br />
+    <div class="container-center flex space-between">
+        <div style="width:48%">
+            <p>Using these pages, I'm able to create, retrieve, and edit wiki pages from the SQL database. </p>
+        </div>
+        <div style="width: 48%; padding: 5px; background: #F8F9FA; border: solid 1px #A4A9B0; ">
+            <img src="~/assets/wiki/editor_image.png" style="width:100%"/>
+            A mockup of the wiki page editor. 
+        </div>
+        <br />
+    </div>
 
     <h4 id="tech_stack">Tech stack</h4>
     <hr />
@@ -100,7 +108,7 @@
     <p>The wiki's pages consist of various headers and paragraphs, plus a few extra page components.  For example, pages will start with standard table-of-contents components.    </p>
     <br /><br />
 
-    <!--
+        <!--
     <h3 id="contents">Contents</h3>
     <hr />
     <p>This wiki consists of pages, labelled by page name, and containing page content, in an SQL database.  However, in order to more easily navigate the wiki's pages, the content is also organized with various</p>
