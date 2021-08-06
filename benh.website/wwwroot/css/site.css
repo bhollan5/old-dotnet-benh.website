@@ -216,14 +216,24 @@ h4 {
 
 }
 .option-bar {
-    width: 100%;
+    width: calc(100% - 14px);
     height: 20px;
     background: #F8F9FA;
     display: flex;
     padding: 7px;
-    border: solid 2px gray;
+    border: solid 2px #808080;
 }
-
+.option-bar div {
+    width: 50px;
+    text-align: center;
+}
+.option-bar img {
+    height: 100%;
+}
+.wiki-page textarea {
+    width: 100%;
+    min-height: 200px;
+}
 
 /************************/
 /**  Footer stuff.     **/

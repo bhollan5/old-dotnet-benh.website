@@ -8,6 +8,7 @@
     <Content Remove="wwwroot\assets\" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Pages\Wiki\" />
     <Folder Include="wwwroot\assets\" />
   </ItemGroup>
 </Project>
